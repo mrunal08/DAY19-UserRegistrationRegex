@@ -5,5 +5,12 @@ public class UserRegistrationRegex {
 
         System.out.println("Welcome to User Registration Program Using Regex!!!");
 
+        Scanner scan = new Scanner(System.in);
+
+        String passwordRegex= "^(?=.*[A-Z])(?=.*[a-z0-9*.!@$%^&(){}:;<>,.?/~_+-=|]).{8,32}$";
+        System.out.println("Enter the password with minimum 8 characters!!!");
+        String password = scan.next();
+        System.out.println("Is the password valid ? : "+password.matches(passwordRegex));
+
     }
 }
