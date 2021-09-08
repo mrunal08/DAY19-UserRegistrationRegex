@@ -7,7 +7,7 @@ public class UserRegistrationRegex {
 
         Scanner scan = new Scanner(System.in);
 
-        String passwordRegex= "^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z])(?=.*[*.!@$%^&(){}:;<>,.?/~_+-=|]).{8,32}$";
+        String passwordRegex= "^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z])(.[*.!@$%^&(){}:;<>,.?/~_+-=|]).{8,32}$";
         System.out.println("Enter the password with minimum 8 characters!!!");
         String password = scan.next();
         System.out.println("Is the password valid ? : "+password.matches(passwordRegex));
